@@ -3,7 +3,7 @@ import { apiRoutes } from "./apiRoutes";
 
 export const api = createApi({
   reducerPath: "api",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3000/" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://project14-back.onrender.com/" }),
   tagTypes: ["Patients"],
   endpoints: (builder) => ({
     getPatients: builder.query({
@@ -48,7 +48,7 @@ export const api = createApi({
 
 export const apiDoctors = createApi({
   reducerPath: "apiDoctors",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3000" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://project14-back.onrender.com" }),
   tagTypes: ["Doctors"],
   endpoints: (builder) => ({
     getDoctors: builder.query({
@@ -94,7 +94,7 @@ export const apiDoctors = createApi({
 
 export const apiAppointments = createApi({
   reducerPath: "apiAppointments",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3000" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://project14-back.onrender.com" }),
   tagTypes: ["Appointments"],
   endpoints: (builder) => ({
     getAppointment: builder.query({
